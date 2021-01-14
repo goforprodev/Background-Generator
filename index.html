@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8"/>
+  </head>
+
+<style>
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right ,#343434 ,#dd22c4 );
+  }
+  h1{
+    font-size: 4rem;
+    font-family: "Poppins Black";
+    letter-spacing: .2px;
+    color:#333;
+  }
+  button{
+    background: linear-gradient(200deg,mediumpurple,hotpink);
+    border: none;
+    border: 2px solid;
+    border-color: mediumpurple;
+    color: white;
+    font-family: "Poppins";
+    padding: 1.3rem 5rem;
+    font-size: 1.2rem;
+    letter-spacing: .1px;
+    display: flex;
+    margin: 2rem auto 6rem auto;
+    transition: .5s ease;
+
+  }
+  button:hover{
+    cursor: pointer;
+    background: transparent;
+  }
+  #propertyValue{
+    color: #333;
+    font-family: "Poppins Light";
+    font-size: 1rem;
+    letter-spacing: .2px;
+    background:white;
+    padding: 1.5rem;
+    width: 60%;
+
+  }
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+  .flex>button{
+    margin:0;
+  }
+
+</style>
+  <body>
+  <h1>Background generator</h1>
+
+  <button id="btn">Auto generate</button>
+
+  <div class="flex">
+    <input type="text" id=propertyValue placeholder="Click GENERATE to create a random linear gradient."></inpput>
+    <button id="copy">Copy</button>
+  </div>
+
+
+  <input type="color" name="color1" id="color-left" value="#ff0">
+  <input type="color" name="color2" id="color-right" value="#0000ff">
+
+  <script src="index.js"></script>
+  </body>
+</html>
